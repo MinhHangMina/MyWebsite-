@@ -1,0 +1,286 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #1d3557;
+}
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+/* banner */
+#banner {
+  padding: 50px;
+}
+.img-banner {
+  position: relative;
+  background-image: url(/images/banner.jpg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  filter: brightness(50%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.text-banner {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  color: #ecf0f1;
+  font-size: 24px;
+  text-align: center;
+}
+.text-banner h1 {
+  text-transform: uppercase;
+}
+.text-banner span {
+  color: #bdc3c7;
+}
+/* Nav-bar */
+#nav-bar a:link,
+a:visited {
+  text-decoration: none;
+  color: #1d3557;
+  text-transform: uppercase;
+  border-left: 2px solid #dfe6e9;
+  padding: 60px 20px 32px;
+}
+
+#nav-bar a:hover,
+a:active {
+  font-weight: bold;
+  cursor: grab;
+}
+
+.text-nav {
+  display: inline-block;
+  margin: 10px 70px 0;
+}
+
+.text-nav h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+.text-nav span {
+  color: #bdc3c7;
+}
+
+.icon {
+  color: #0abde3;
+  font-weight: bold;
+}
+
+/* info */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+  line-height: 2;
+  margin-top: 40px;
+}
+
+li span {
+  font-weight: bold;
+}
+.mt-40 {
+  margin-bottom: 20px;
+}
+.section-title {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+#personal-info {
+  padding: 0 200px 80px 30px;
+  background-color: #dff1fa;
+  font-size: 18px;
+}
+#target {
+  padding: 40px 30px;
+  background-color: #e7f2f8;
+  font-size: 18px;
+}
+
+.job-grid {
+  display: grid !important;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  column-gap: 40px;
+  row-gap: 20px;
+  align-items: flex-start;
+}
+
+.job-box-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  column-gap: 20px;
+  row-gap: 40px;
+  border: 1px solid #bdc3c7;
+  align-items: center;
+  padding: 24px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.job-line {
+  display: flex;
+}
+
+.line {
+  width: 40px;
+  height: 3px;
+  background-color: #0abde3;
+  margin-right: 20px;
+}
+
+.line-grey {
+  width: 40px;
+  height: 3px;
+  background-color: #5a5b5c;
+  margin-right: 20px;
+}
+
+.job-content {
+  grid-column: 1/-1;
+  margin: 20px;
+}
+
+.job-title {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.now {
+  background-color: #0abde3;
+  padding: 4px 8px;
+  color: #dff1fa;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.list {
+  position: relative;
+}
+
+.list1 {
+  position: relative;
+}
+
+.job-note::before {
+  content: "*";
+  color: #0abde3;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 18px;
+  position: absolute;
+  left: -25px;
+}
+
+.certificate-list {
+  display: flex;
+  border-bottom: 1px solid rgb(194, 122, 40);
+  padding-bottom: 40px;
+}
+
+.certificate-item {
+  display: flex;
+}
+
+.certificate-item img {
+  max-width: 30%;
+  margin-right: 20px;
+}
+
+.below {
+  margin-top: 40px;
+}
+
+.below img {
+  max-width: 15%;
+}
+
+.certificate-text {
+  font-size: 16px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.project-item {
+  border: 1px solid rgb(145, 143, 143);
+}
+
+.project-item img {
+  max-width: 100%;
+  border-bottom: 1px solid rgb(145, 143, 143);
+}
+
+.project-name,
+.project-desc,
+.project-review,
+.project-technical,
+.project-date {
+  padding: 10px;
+  border-bottom: 1px solid rgb(145, 143, 143);
+}
+
+.project-date {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-radius {
+  padding: 5px 30px;
+  background-color: #0abde3;
+  border-radius: 25px;
+}
+
+.project-desc,
+.project-review,
+.project-technical {
+  display: flex;
+  gap: 30px;
+}
+
+.project-text {
+  min-width: 80px;
+}
+
+#footer {
+  padding: 50px;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#footer ul li {
+  list-style: none;
+}
+
+#footer ul li i {
+  font-size: 24px;
+  color: #0abde3;
+}

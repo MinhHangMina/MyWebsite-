@@ -1,0 +1,91 @@
+/* 
+.tablet {
+  position: relative;
+  width: 768px;
+  height: 1024px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+.tablet:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+.tablet:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+.tablet .content {
+  width: 768px;
+  height: 1024px;
+  background: white;
+  margin: -1px;
+} */
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  #banner {
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  .text-banner {
+    top: 20%;
+    left: 26%;
+  }
+  .text-nav {
+    display: none;
+  }
+  #nav-bar {
+    margin-top: 20px;
+    text-align: center;
+  }
+  section > .container {
+    padding: 0;
+    max-width: 100%;
+  }
+  .about-grid {
+    display: flex;
+    gap: 40px;
+    align-items: unset;
+    background: rgb(196, 195, 195);
+  }
+
+  #target {
+    padding: 18px 30px;
+    max-width: 50%;
+    background: transparent;
+  }
+
+  #personal-info {
+    padding: 0 10px 80px 30px;
+    margin-top: 0;
+    background: transparent;
+  }
+
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 233px);
+    gap: 15px;
+  }
+}
